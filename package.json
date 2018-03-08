@@ -1,0 +1,7 @@
+{
+  "name": "Splash",
+  "version": "",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
