@@ -374,13 +374,11 @@ function userInterface(){
   strokeWeight(2);
   stroke(215);
 
-  if (mouseX > width * 0.5){
-    line(width - 10, height - 20, width - 40, height);
-    line(width - 10, height - 20, width - 40, height - 40);
-  } else{
-    line(10, height - 20, 40, height);
-    line(10, height - 20, 40, height - 40);
-  }
+  line(width - 10, height - 20, width - 40, height);
+  line(width - 10, height - 20, width - 40, height - 40);
+  line(10, height - 20, 40, height);
+  line(10, height - 20, 40, height - 40);
+
 
   if (counter % 5 == 0){
     push();
