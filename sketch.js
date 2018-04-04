@@ -278,7 +278,7 @@ class ribbon_particle {
 }
 
 function snow(){
-  if (snow_particles.length < 300){
+  if (snow_particles.length < 200){
 		let f = new snow_particle();
 		snow_particles.push(f);
 	}
@@ -295,7 +295,7 @@ class snow_particle {
 
     this.x = random(0, width);
     this.y = -10;
-    this.w = random(2,8);
+    this.w = random(3,9);
     this.spd = this.w * 0.5;
     this.lerpVal = random(1);
     this.sid = random(-0.5,0.5);
