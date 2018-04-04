@@ -278,7 +278,7 @@ class ribbon_particle {
 }
 
 function snow(){
-  if (snow_particles.length < 400){
+  if (snow_particles.length < 300){
 		let f = new snow_particle();
 		snow_particles.push(f);
 	}
@@ -320,7 +320,7 @@ class snow_particle {
       this.alpha = map(this.y, height * 0.75, height + 10, 255, 0);
     }
 
-    if (this.alpha < 0) {
+    if (this.y > height + 10) {
       this.y = -10;
     }
 
